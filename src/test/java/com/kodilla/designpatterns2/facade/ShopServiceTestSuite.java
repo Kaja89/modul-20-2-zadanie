@@ -66,16 +66,16 @@ public class ShopServiceTestSuite {
     }
 
     @Test
-    public void testOrderFacade(){
+    public void testOrderFacade() {
         OrderDto order = new OrderDto();
         order.addItem(new ItemDto(10l, 2));
         order.addItem(new ItemDto(216l, 1));
         order.addItem(new ItemDto(25l, 1));
         order.addItem(new ItemDto(11l, 3));
 
-        try{
+        try {
             orderFacade.processOrder(order, 1L);
-        } catch(OrderProcessingException e) {
+        } catch (OrderProcessingException e) {
 
         }
     }

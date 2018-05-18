@@ -58,7 +58,6 @@ public class PizzaDecoratorTestSuite {
         basicPizza = new HavanaDecorator(basicPizza);
         basicPizza = new ChickenDecorator(basicPizza);
         basicPizza = new CornDecorator(basicPizza);
-        basicPizza = new AdditionalCheeseDecorator(basicPizza);
 
         //When
         String description = basicPizza.getPizzaDescription();
